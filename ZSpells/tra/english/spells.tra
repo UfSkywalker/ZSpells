@@ -1,0 +1,841 @@
+@2001 =~Corrupt Elemental Bomb~
+@2002 =~Corrupt Elemental Bomb (Conjuration)
+Level: 5
+Range: 15 ft.
+Duration: 1 round
+Casting Time: 6
+Area of Effect: One target
+Saving Throw: None
+
+The spell summons a magical bomb onto the target. Once it has attached, the bomb draws on the target's elemental magic and gathers power, detonating one round later for 2d6 points of magic damage that ignore resistances. For every type of elemental damage the target is immune to (fire/cold/electrical/magic), the final damage is increased by an extra 2d6. A target can carry only one bomb at a time.
+
+This spell does not harm party members.~
+
+@2003 =~Greater Corrupt Elemental Bomb~
+@2004 =~Greater Corrupt Elemental Bomb (Conjuration)
+Level: 8
+Range: 15 ft.
+Duration: 1 round
+Casting Time: 6
+Area of Effect: One target
+Saving Throw: None
+
+An upgraded version of Corrupt Elemental Bomb. Its base and bonus damage are increased to 4d6. It can also draw extra damage from the target's acid and poison resistance.~
+
+@2005 =~Arrow of Judgment~
+@2006 =~Arrow of Judgment (Conjuration)
+Level: 6
+Range: 40 ft.
+Duration: Instant
+Casting Time: 6
+Area of Effect: One target
+Magic Resistance: No
+Saving Throw: None
+
+You call down a beam of holy light from the heavens, bringing destructive judgment upon the enemies of good. The spell deals 1d6 points of holy damage per cleric level (ignoring magic resistance and damage resistance). Against an evil creature, every damage die deals an extra +2 points; against undead, +2 more; against an imp or another evil outsider, +2 more; against a demon, a lich or a dragon, +4 more.~
+
+@2007 =~Hellfire Ray~
+@2008 =~Hellfire Ray (Evocation)
+Level: 6
+Range: The caster's line of sight
+Duration: Permanent
+Casting Time: 5
+Area of Effect: One creature
+Magic Resistance: Yes
+Saving Throw: None
+
+You hurl hellfire from your hand. You fire one ray, and from level 11 onward you gain one additional ray for every 4 caster levels (to a maximum of 3 rays at level 19). Each ray deals 1d6 points of fire damage per caster level (to a maximum of 15d6). Half of this damage is fire and half is unholy, so fire resistance can cancel only half of it.
+
+The first ray has a 100% chance to hit, the second 80% and the third 60%. From level 20 onward, the chance to hit increases by 10 for every 5 caster levels.~
+
+@2009 =~Disintegrate (PF version)~
+@2010 =~Disintegrate (PF version) (Transmutation)
+Level: 6
+Range: The caster's line of sight
+Duration: Instant
+Casting Time: 6
+Area of Effect: One creature
+Magic Resistance: Yes
+Saving Throw: Special
+
+After casting this spell, the wizard sends a green ray at the target. A creature struck by it must make a saving throw vs. petrification/polymorph at DC 4 or take 2d6 points of magic damage per wizard level (to a maximum of 40d6). Even on a successful save, it still takes 5d6 points of magic damage.
+(From level 21 onward, the DC increases by 1 for every 4 caster levels)~
+
+@2011 =~Finger of Death (PF version)~
+@2012 =~Finger of Death (PF version)
+(Necromancy)
+Level: 7
+Range: The caster's line of sight
+Duration: Permanent
+Casting Time: 5
+Area of Effect: One creature
+Magic Resistance: Yes
+Saving Throw: Negates
+
+Finger of Death chokes the life out of its target. The wizard need only point an index finger at the creature while intoning the spell; if the creature fails a saving throw vs. death (DC 4) it takes 10 points of damage per wizard level. Damage resistance does not protect against this magic, but undead and constructs are immune to it.
+(From level 21 onward, the DC increases by 1 for every 4 caster levels)~
+
+@2013 =~Stormbolts~
+@2014 =~Stormbolts (Invocation/Evocation)
+Level: 8
+Range: 30 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: 30-ft. radius, centered on the caster
+Magic Resistance: Yes
+Saving Throw: Half
+
+When you cast this spell, lightning lashes out from your body in every direction. Enemy creatures in the area take 1d8 points of electrical damage per caster level (to a maximum of 20d8) and are stunned for 1 round. A successful saving throw vs. spell halves the damage and negates the stun.~
+
+@2015 =~Judgment Storm~
+@2016 =~Judgment Storm (Conjuration)
+Level: 7
+Range: 40 ft.
+Duration: Instant
+Casting Time: 6
+Area of Effect: 30-ft. radius
+Magic Resistance: No
+Saving Throw: None
+
+The mass version of Arrow of Judgment, bringing divine punishment down upon everything evil within the area.~
+
+@2017 =~Wail of the Banshee (PF version)~
+@2018 =~Wail of the Banshee (PF version)
+(Necromancy)
+
+Level: 9
+Range: 0
+Duration: Instant
+Casting Time: 9
+Area of Effect: 15-ft. radius
+Magic Resistance: Yes
+Saving Throw: Negates
+
+When this terrible spell is cast, the wizard lets out a piercing scream like that of a banshee (a keening female spirit). Everyone within the area of effect hears the dreadful wail, and any creature that fails a saving throw vs. death (DC 4) takes 10 points of damage per wizard level. Damage resistance does not protect against this magic, and undead and constructs are immune to it. The caster and party members are not affected by the wail.
+(From level 21 onward, the DC increases by 1 for every 4 caster levels)~
+
+@2019 =~Echolocation~
+@2020 =~Echolocation
+(Transmutation)
+
+Level: 5
+Range: 0
+Duration: 1 turn
+Casting Time: 8
+Area of Effect: 70-ft. radius
+Saving Throw: None
+
+You emit a high-frequency noise and use the echoes to observe your surroundings. When the spell is cast, the area within a 70-ft. radius of the caster is affected. All enemy illusion/phantasm spells are dispelled at once, and the effect repeats at the end of every round for a full turn. The spells that can be dispelled this way include: Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility and Shadow Door. The area of effect is a 70-ft. radius centered on the caster, and the magic resistance of the targets does not protect against this illusion-dispelling effect. The spell affects only enemies, so it does not remove invisibility from party members.~
+
+@2021 =~Destroy Undead~
+@2022 =~Undeath to Death~
+@2023 =~Undeath to Death
+(Necromancy)
+
+Level: 7
+Range: 20 ft.
+Duration: Instant
+Casting Time: 4
+Area of Effect: 20-ft. radius
+Magic Resistance: Yes
+Saving Throw: Negates
+
+When this spell is cast, a blazing sunlight shines down from the sky upon the caster and upon every creature within a 20-ft. radius. Every undead creature in the area that fails a saving throw vs. death (DC 4) is utterly destroyed by the holy light.
+(From level 21 onward, the DC increases by 1 for every 4 caster levels)~
+
+@2024 =~Heroism~
+@2025 =~Heroism
+(Enchantment)
+
+Level: 3
+Range: Touch
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One target
+Magic Resistance: None
+Saving Throw: None
+
+This spell fills a creature with courage and morale in battle. The target gains a +2 morale bonus to attack rolls, saving throws and skill checks.~
+
+@2026 =~Greater Heroism~
+@2027 =~Greater Heroism
+(Enchantment)
+
+Level: 6
+Range: Touch
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One target
+Magic Resistance: None
+Saving Throw: None
+
+This spell works like Heroism, but the target gains a +4 morale bonus to attack rolls, weapon damage, saving throws and skill checks, becomes immune to fear effects, and gains 20 temporary hit points.
+This spell does not stack with Heroism.~
+
+@2028 =~Mage Armor I (PF)~
+@2029 =~Mage Armor I (PF)
+(Conjuration)
+
+Level: 1
+Range: Touch
+Duration: 9 hours
+Casting Time: 9
+Area of Effect: One target
+Saving Throw: None
+
+Mage Armor creates a magical field of protection equal to that of scale mail (Armor Class 6). Its effect stacks with Dexterity adjustments, and for a fighter/mage it also stacks with a shield. Mage Armor has no weight, does not hinder movement and does not interfere with spellcasting. It lasts until its duration expires, or until it is dispelled.~
+
+@2030 =~Mage Armor II (PF)~
+@2031 =~Mage Armor II (PF)
+(Conjuration)
+
+Level: 4
+Range: Touch
+Duration: 9 hours
+Casting Time: 9
+Area of Effect: One target
+Saving Throw: None
+
+This spell works like Mage Armor I (PF), but the base Armor Class of the creature it is cast on becomes 1, as if it were wearing full plate armor.~
+
+@2032 =~Mage Armor III (PF)~
+@2033 =~Mage Armor III (PF)
+(Conjuration)
+
+Level: 7
+Range: Touch
+Duration: 9 hours
+Casting Time: 9
+Area of Effect: One target
+Saving Throw: None
+
+This spell works like Mage Armor I (PF), but the base Armor Class of the creature it is cast on becomes -2. This spell cannot be dispelled.~
+
+@2034 =~Mage Armor IV (PF)~
+@2035 =~Mage Armor IV (PF)
+(Conjuration)
+
+Level: 9
+Range: Touch
+Duration: 9 hours
+Casting Time: 9
+Area of Effect: One target
+Saving Throw: None
+
+This spell works like Mage Armor I (PF), but the base Armor Class of the creature it is cast on becomes -4. This spell cannot be dispelled.~
+
+@2036 =~Can only be overwritten by Mage Armor of the same or a higher level~
+
+@2037 =~Mass Stoneskin~
+@2038 =~Mass Stoneskin
+(Transmutation)
+Level: 5
+Range: 0
+Duration: 12 hours
+Casting Time: 1
+Area of Effect: 20-ft. radius
+Saving Throw: None
+
+This spell works like Stoneskin, but it affects every party member within the area. Each casting consumes 500 gold pieces worth of material components.~
+
+@2039 =~Rage~
+@2040 =~Rage
+(Enchantment)
+Level: 3
+Range: 10 ft.
+Duration: 1 round/level
+Casting Time: 3
+Area of Effect: One creature
+Saving Throw: None
+
+You send the target into a rage. In all other respects the spell works like the barbarian's rage ability.~
+
+@2041 =~Greater Rage~
+@2042 =~Greater Rage
+(Enchantment)
+Level: 5
+Range: 10 ft.
+Duration: 1 round/level
+Casting Time: 3
+Area of Effect: One creature
+Saving Throw: None
+
+You send the target into a rage. In all other respects the spell works like the berserker's rage ability, but the target is not fatigued when the rage ends.~
+@2043 =~Keen Edge~
+@2044 =~Keen Edge
+(Enchantment)
+Level: 3
+Range: 10 ft.
+Duration: 12 hours
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+This spell can increase the critical hit chance of the target's melee weapon by 2 points.
+~
+@2045 =~Bull's Strength~
+@2046 =~Bull's Strength
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+The target becomes stronger. This spell can grant a +4 enhancement bonus to Strength, and also grants the corresponding bonuses to melee attack rolls, melee damage rolls, and other checks that use the Strength modifier.
+~
+@2047 =~Cat's Grace~
+@2048 =~Cat's Grace
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+A creature affected by this spell becomes more nimble, agile, and coordinated. This spell can grant a +4 enhancement bonus to Dexterity, bringing the normal benefits to AC, Reflex saves, and other checks that use the Dexterity modifier.
+~
+@2049 =~Bear's Endurance~
+@2050 =~Bear's Endurance
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+A creature affected by this spell becomes more vigorous and hardy. This spell grants a +4 enhancement bonus to the target's Constitution, which likewise grants bonuses to hit points, Fortitude saves, Constitution checks, and so on. The hit points gained from the temporary increase in Constitution are not temporary hit points. When the target's Constitution returns to normal, these hit points disappear as well. They are not consumed first the way temporary hit points are.
+~
+@2051 =~Fox's Cunning~
+@2052 =~Fox's Cunning
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+The target becomes more intelligent. This spell grants a +4 enhancement bonus to Intelligence, so that ordinary Intelligence-based skill checks and other checks that use the Intelligence modifier all gain bonuses.
+~
+@2053 =~Owl's Wisdom~
+@2054 =~Owl's Wisdom
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+A creature affected by this spell becomes wiser. This spell can grant a +4 enhancement bonus to Wisdom, so that all Wisdom-related skills gain their normal bonuses.
+~
+@2055 =~Eagle's Splendor~
+@2056 =~Eagle's Splendor
+(Transmutation)
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+Saving Throw: None
+
+A creature affected by this spell becomes more charismatic. This spell can grant a +4 enhancement bonus to Charisma.
+~
+@2057 =~Expeditious Retreat~
+@2058 =~Expeditious Retreat
+(Transmutation)
+Level: 2
+Range: 0
+Duration: 10 rounds/level
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+This spell can double your basic land movement rate.
+~
+@2059 =~Battering Blast~
+@2060 =~Battering Blast
+(Invocation/Evocation)
+Level: 3
+Range: 30 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: One target
+Saving Throw: Special
+
+You hurl a fist-sized sphere of force covered with spikes at the designated creature. On a successful hit it deals 5d6 points of force damage (this is magical energy damage). For every 5 caster levels above 5th, you gain one additional sphere of force.
+A creature struck by any of the force spheres becomes the target of a bull rush attempt. The target must make a saving throw vs. breath weapon at -4 or be knocked down and pushed away from the caster.
+Force damage can ignore the target's magic damage resistance, but it must still overcome the target's magic resistance to take effect. At the same time, spell protections and Spell Immunity can still defend against this spell.
+~
+@2061 =~Battering Blast (Heightened/Piercing)~
+@2062 =~Battering Blast (Heightened/Piercing)
+Level: 6
+Range: 30 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: One target
+Saving Throw: Special
+
+This spell is a metamagic version of the 3rd-level spell Battering Blast. After heightened and piercing metamagic, this spell can penetrate the target's magic resistance. At the same time, each sphere of force is treated as a 6th-level spell.
+~
+@2063 =~Battering Blast (Heightened/Piercing/Empowered)~
+@2064 =~Battering Blast (Heightened/Piercing/Empowered)
+Level: 8
+Range: 30 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: One target
+Saving Throw: Special
+
+This spell is a metamagic version of the 3rd-level spell Battering Blast. On the basis of heightened and piercing metamagic, empowered metamagic makes each damage die of this spell deal an additional 2 points of damage. At the same time, each sphere of force is treated as an 8th-level spell.
+~
+@2065 =~Heroic Invocation~
+@2066 =~Heroic Invocation
+(Enchantment)
+
+Level: 9
+Range: 30 ft.
+Duration: 9 hours
+Casting Time: 6
+Area of Effect: 30-ft. area
+Magic Resistance: None
+Saving Throw: None
+
+This spell functions like Mass Greater Heroism, but its duration is 9 hours and it cannot be dispelled.
+This spell does not stack with Heroism and Greater Heroism.
+~
+@2067 =~Enlarge Person~
+@2068 =~Enlarge Person
+(Transmutation)
+
+Level: 1
+Range: 30 ft.
+Duration: 10 rounds/level
+Casting Time: 6
+Area of Effect: One humanoid creature
+Magic Resistance: None
+Saving Throw: None
+
+This spell can make a humanoid creature grow rapidly, doubling in height and increasing its weight to 8 times normal. This increase raises the creature's size category by one. The target creature gains a +2 size bonus to Strength, takes a -2 size penalty to Dexterity (to a minimum of 1), and takes a -1 penalty to attack rolls and AC because of the change in size.
+Equipment worn or held by the creature also grows at the same time. Melee weapons affected by this spell can deal 2 points of extra damage; ranged weapons are unaffected.
+Enlarge Person can counter and dispel Reduce Person.
+~
+@2069 =~Reduce Person~
+@2070 =~Reduce Person
+(Transmutation)
+
+Level: 1
+Range: 30 ft.
+Duration: 10 rounds/level
+Casting Time: 6
+Area of Effect: One humanoid creature
+Magic Resistance: None
+Saving Throw: None
+
+This spell can make a humanoid creature shrink rapidly; its height, length, and width are halved, and its weight becomes 1/8 of normal. This change lowers the creature's size category by one. The target creature gains a +2 size bonus to Dexterity, takes a -2 size penalty to Strength (to a minimum of 1), and gains a +1 bonus to attack rolls and AC because of the change in size.
+All equipment worn or held by the creature also shrinks at the same time. Melee and ranged weapons affected by this spell can deal 2 points less damage.
+Reduce Person can counter and dispel Enlarge Person.
+~
+@2071 =~Shield (PF)~
+@2072 =~Shield (PF)
+(Abjuration)
+
+Level: 1
+Range: 0
+Duration: 10 rounds/level
+Casting Time: 1
+Area of Effect: The caster
+Magic Resistance: None
+Saving Throw: None
+
+Shield creates an invisible shield of force that floats in front of you. It can intercept all magic missile attacks aimed at you. At the same time, this shield of force also grants a +4 shield bonus to AC.
+~
+@2073 =~Orb of Fire~
+@2074 =~Orb of Fire
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of fire shoots out from your palm and flies at the target. It deals 1d6 points of fire damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2075 =~Orb of Ice~
+@2076 =~Orb of Ice
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of ice shoots out from your palm and flies at the target. It deals 1d6 points of cold damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2077 =~Orb of Lightning~
+@2078 =~Orb of Lightning
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of lightning shoots out from your palm and flies at the target. It deals 1d6 points of electrical damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2079 =~Orb of Acid~
+@2080 =~Orb of Acid
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of acid shoots out from your palm and flies at the target. It deals 1d6 points of acid damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2081 =~Orb of Sound~
+@2082 =~Orb of Sound
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of sound shoots out from your palm and flies at the target. It deals 1d6 points of sonic damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2083 =~Shadow Shield~
+@2084 =~Shadow Shield
+(Illusion)
+
+Level: 7
+Range: 0
+Duration: 10 rounds/level
+Casting Time: 5
+Area of Effect: The caster
+Magic Resistance: None
+Saving Throw: None
+
+The caster is covered by a cloak of shadow, which grants the caster the following effects:
++5 AC
++10 physical damage resistance
+Immunity to instant death spell effects
+Immunity to negative energy effects
+~
+@2085 =~Animalistic Power~
+@2086 =~Animalistic Power
+(Transmutation)
+
+Level: 2
+Range: 10 ft.
+Duration: 10 rounds/level
+Casting Time: 4
+Area of Effect: One creature
+
+You channel the power of nature into the target's body, granting the target a +2 bonus to Strength, Dexterity and Constitution. This spell cannot coexist with Bull's Strength, Cat's Grace and Bear's Endurance. They overwrite each other's spell effects.
+~
+@2087 =~Orb of Poison~
+@2088 =~Orb of Poison
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter orb of poison shoots out from your palm and flies at the target. It deals 1d6 points of poison damage per caster level (to a maximum of 15d6).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2089 =~Prismatic Orb~
+@2090 =~Prismatic Orb
+(Conjuration)
+
+Level: 4
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 3-inch-diameter elemental orb shoots out from your palm and flies at the target. It deals 1d6 points of elemental damage per caster level (to a maximum of 15d6). When casting this spell, you can choose the elemental type of the orb.
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2091 =~Lesser Orb of Fire~
+@2092 =~Lesser Orb of Fire
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of fire shoots out from your palm and flies at the target. It deals 1d8 points of fire damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2093 =~Lesser Orb of Ice~
+@2094 =~Lesser Orb of Ice
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of ice shoots out from your palm and flies at the target. It deals 1d8 points of cold damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2095 =~Lesser Orb of Lightning~
+@2096 =~Lesser Orb of Lightning
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of lightning shoots out from your palm and flies at the target. It deals 1d8 points of electrical damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2097 =~Lesser Orb of Acid~
+@2098 =~Lesser Orb of Acid
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of acid shoots out from your palm and flies at the target. It deals 1d8 points of acid damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2099 =~Lesser Orb of Sound~
+@2100 =~Lesser Orb of Sound
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of sound shoots out from your palm and flies at the target. It deals 1d8 points of sonic damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2101 =~Lesser Orb of Poison~
+@2102 =~Lesser Orb of Poison
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter orb of poison shoots out from your palm and flies at the target. It deals 1d8 points of poison damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level).
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2103 =~Lesser Prismatic Orb~
+@2104 =~Lesser Prismatic Orb
+(Conjuration)
+
+Level: 1
+Range: 30 ft.
+Duration: Instant
+Casting Time: 8
+Area of Effect: One creature
+Magic Resistance: None
+Saving Throw: None
+
+A 2-inch-diameter elemental orb shoots out from your palm and flies at the target. It deals 1d8 points of elemental damage. Starting at 1st level, the damage increases by 1d8 for every 2 caster levels gained (2d8 at 3rd level, 3d8 at 5th level, 4d8 at 7th level, to a maximum of 5d8 at 9th level). When casting this spell, you can choose the elemental type of the orb.
+
+This spell ignores the target's magic resistance and spell immunity.
+~
+@2105 =~Greater Spell Shield~
+@2106 =~Greater Spell Shield (Abjuration)
+Level: 7
+Range: 0
+Duration: 4 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+Greater Spell Shield is an upgraded version of Spell Shield. It sacrifices duration to greatly strengthen its protection. While the spell is in effect, the caster's own spells cannot be removed.
+~
+@2107 =~Mass Greater Spell Shield~
+@2108 =~Mass Greater Spell Shield (Abjuration)
+Level: 9
+Range: 0
+Duration: 4 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+The mass version of Greater Spell Shield. For 4 rounds your party cannot be dispelled.
+~
+@2109 =~Greater Remove Magic~
+@2110 =~Greater Remove Magic (Abjuration)
+
+Level: 6
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+Greater Remove Magic is an upgraded version of Remove Magic. It calculates its chance of success using the character's caster level +10.~
+@2111 =~Corrupt Magic~
+@2112 =~Corrupt Magic (Mythic)
+Level: 10
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: One target
+Saving Throw: None
+
+This spell releases a twisted force of corrupt magic, eroding the target's magical essence directly. It can remove all magical effects from the target, including the effects of spells, potions and certain magical items. Spells and spell-like effects are completely unravelled and destroyed, just as if affected by a powerful "Remove Magic". Protective effects such as Spell Shield and Spell Immunity (Abjuration) are removed as well.
+
+Whenever a spell protection effect is removed, it triggers a small burst of corrupt magic. All creatures in the area take nonlethal damage equal to the removed spell's level x 1d6, and suffer a -2 penalty to subsequent saving throws. If an affected creature fails a saving throw vs. death, it is knocked down for one round. This spell does not deal damage or negative effects to party members.
+
+Cost:
+The caster forgets one memorized spell (starting from the highest spell level).
+
+"Magic is born of order, and returns to chaos."
+- Z
+~
+@2113 =~Mage's Disjunction~
+@2114 =~Mage's Disjunction (Abjuration)
+Level: 9
+Range: 0
+Duration: Instant
+Casting Time: 3
+Area of Effect: 60-ft. radius
+Saving Throw: None
+
+This spell can remove magical effects from every subject in the area of effect, including the effects of spells, potions or certain magical items. Spells and spell-like effects are unravelled and completely destroyed, that is, their effects end just as if affected by 'Dispel Magic'.
+
+This spell does not affect party members.~
+@2115 =~Absolute Death~
+@2116 =~Absolute Death (Mythic)
+Level: 10
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: One target
+Saving Throw: None
+
+This spell condenses the caster's will into a pure decree of death, acting directly on the essence of the target's soul. If the target fails a saving throw vs. death at a -4 penalty, it dies instantly, ignoring its creature type and immunity to death magic. Even on a successful save, the target still takes 100 points of nonlethal damage.
+
+Cost:
+The caster must make a saving throw vs. death (-4 penalty) to avoid 10d6 points of backlash damage.
+
+"Mind the authority you wield: the first thing it measures is the strength of your own soul."
+- Z
+~
+@2117 =~Lesser Ruby Ray of Reversal~
+@2118 =~Lesser Ruby Ray of Reversal (Transmutation)
+Level: 4
+Range: The caster's line of sight
+Duration: Instant
+Casting Time: 3
+Area of Effect: One target creature
+Saving Throw: None
+
+This spell removes one spell protection of 5th level or lower from the target creature, including the following spells: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Immunity and Minor Spell Turning. The target's magic resistance does not protect against this spell. If the target has multiple spell protections, the highest-level protection is removed first; if the levels are identical, which protection is removed is determined randomly.
+~
+@2119 =~Greater Breach~
+@2120 =~Greater Breach (Abjuration)
+Level: 7
+Range: The caster's line of sight
+Duration: Instant
+Casting Time: 5
+Area of Effect: One target creature
+Saving Throw: None
+
+Greater Breach is an upgraded version of Breach. This spell ignores the target's immunities based on spell level. It can affect liches and rakshasas.
+~
+@2121 =~Threefold Wish~
+@2122 =~Threefold Wish (Mythic)
+Level: 10
+Range: 0
+Duration: Instant
+Casting Time: 5
+Area of Effect: The caster
+Saving Throw: None
+
+This spell allows the caster to weave and release three complete Wish spells at the same time. Each wish has its own independent and complete power, and can fulfil several of the caster's intentions in the same instant. Legend holds that only a caster who has touched the mythic realm could gather such an immense force of wishes into a single casting.
+
+Cost:
+After casting, the caster forgets two prepared spells (starting from the highest spell level), and must prepare them again before they can be used once more.
+
+"One thought, three wishes, and even time and space tremble - but every echo must be paid for with a part of yourself."
+- Z
+~
+@2123 =~Controlled Fireball~
+@2124 =~Controlled Fireball (Invocation/Evocation)
+Level: 4
+Range: 40 ft.
+Duration: Instant
+Casting Time: 3
+Area of Effect: 15-ft. radius
+Saving Throw: Half
+
+This spell functions like Fireball, but the caster can precisely control which creatures it affects, ensuring that allies are not harmed.
+~

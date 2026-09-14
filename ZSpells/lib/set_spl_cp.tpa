@@ -1,0 +1,96 @@
+LAF resolve_splprot_state STR_VAR stat=~129~ value=~0~ relation=~5~ row_name=~_STAT=WIZARD_SPELL_TURNING~ RET new_state_index END
+OUTER_SET new_id_eq_ws_turn = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~116~ value=~0~ relation=~5~ row_name=~_STAT=WIZARD_SPELL_DEFLECTION~ RET new_state_index END
+OUTER_SET new_id_eq_ws_def = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~164~ value=~0~ relation=~5~ row_name=~_STAT=WIZARD_SPELL_TRAP~ RET new_state_index END
+OUTER_SET new_id_eq_ws_trap = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~162~ value=~0~ relation=~5~ row_name=~_STAT=WIZARD_SPELL_IMMUNITY~ RET new_state_index END
+OUTER_SET new_id_eq_ws_imm = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#MSP93.spl~      ~override/Z#MSP93.spl~
+  SAY NAME1 @2111
+  SAY UNIDENTIFIED_DESC @2112
+  //设置对法术陷阱的反应
+  LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 326
+        target        = 2
+        timing        = 1
+        parameter2    = "%new_id_eq_ws_trap%"
+        power         = 0
+        resist_dispel = 0
+        duration      = 0
+        probability1  = 100
+        probability2  = 0
+      STR_VAR
+        resource   =  "Z#SP939"
+    END
+  //设置对法术偏转的反应
+  LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 326
+        target        = 2
+        timing        = 1
+        parameter2    = "%new_id_eq_ws_turn%"
+        power         = 0
+        resist_dispel = 0
+        duration      = 0
+        probability1  = 100
+        probability2  = 0
+      STR_VAR
+        resource   =  "Z#SP937"
+    END
+  //设置对法术反转的反应
+  LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 326
+        target        = 2
+        timing        = 1
+        parameter2    = "%new_id_eq_ws_def%"
+        power         = 0
+        resist_dispel = 0
+        duration      = 0
+        probability1  = 100
+        probability2  = 0
+      STR_VAR
+        resource   =  "Z#SP936"
+    END
+  //设置对法术免疫的反应
+  LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 326
+        target        = 2
+        timing        = 1
+        parameter2    = "%new_id_eq_ws_imm%"
+        power         = 0
+        resist_dispel = 0
+        duration      = 0
+        probability1  = 100
+        probability2  = 0
+      STR_VAR
+        resource   =  "Z#SP935"
+    END
+  //设置对法术护盾的反应
+  LPF ADD_SPELL_EFFECT
+      INT_VAR
+        insert_point  = 0
+        opcode        = 326
+        target        = 2
+        timing        = 1
+        parameter1    = 108
+        parameter2    = 110
+        power         = 0
+        resist_dispel = 0
+        duration      = 0
+        probability1  = 100
+        probability2  = 0
+      STR_VAR
+        resource   =  "Z#SP935"
+    END

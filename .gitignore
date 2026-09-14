@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Editors
+*~
+*.swp
+.idea/
+.vscode/
+
+# WeiDU install artefacts
+weidu_external/
+weidu.log
+*.debug
+backup/
+ZSpells/backup/
+
+# Prebuilt WeiDU installer binaries: attach these to a GitHub release instead
+Setup-*.exe
+SETUP-*.exe
+Setup-*.command
+setup-*.command
+weidu.exe
+weidu
+weidu_osx_*
+weidu_unix_*
+weidu_win_*
+weidu-mac

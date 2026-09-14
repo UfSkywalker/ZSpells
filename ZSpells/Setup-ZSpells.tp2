@@ -1,0 +1,114 @@
+BACKUP ~ZSpells/backup~ 
+AUTHOR ~UfSkywalker~ 
+
+VERSION ~v1.2~
+
+AUTO_EVAL_STRINGS
+
+README ~README.%LANGUAGE%.md~ ~README.md~
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~
+
+LANGUAGE  ~English~	~english~  ~ZSpells/tra/english/setup.tra~  ~ZSpells/tra/english/spells.tra~ ~ZSpells/tra/english/items.tra~ ~ZSpells/tra/english/original.tra~
+LANGUAGE  ~Simplified Chinese~	~schinese~  ~ZSpells/tra/schinese/setup.tra~  ~ZSpells/tra/schinese/spells.tra~ ~ZSpells/tra/schinese/items.tra~ ~ZSpells/tra/schinese/original.tra~
+
+
+BEGIN @1000
+DESIGNATED 0
+REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) @1003
+LABEL ~ZSpells-MAIN~
+INCLUDE ~%MOD_FOLDER%/lib/splprot.tpa~
+INCLUDE ~%MOD_FOLDER%/lib/ids.tpa~
+INCLUDE ~%MOD_FOLDER%/lib/statdesc.tpa~
+
+COPY ~ZSpells\spl\nameless~ ~override~
+
+COPY ~ZSpells\eff~ ~override~
+
+COPY ~ZSpells\2da~ ~override~
+
+//COPY ~SpellMaster\vvc~ ~override~
+
+COPY ~ZSpells\bam~ ~override~
+//写入投射物
+ADD_PROJECTILE      ~ZSpells/pro/Z#BOMB.pro~
+ADD_PROJECTILE      ~ZSpells/pro/Z#CORR.pro~
+ADD_PROJECTILE      ~ZSpells/pro/Z#LIANP.pro~
+ADD_PROJECTILE      ~ZSpells/pro/Z#ElTP.pro~
+ADD_PROJECTILE      ~ZSpells/pro/Z#FBNP.PRO~
+
+//修改爆弹的效果
+INCLUDE ~%MOD_FOLDER%/lib/set_spell_bomb.tpa~
+//修改地狱烈焰射线效果
+INCLUDE ~%MOD_FOLDER%/lib/set_spell_hf.tpa~
+//安装基础法术
+INCLUDE ~%MOD_FOLDER%/lib/set_spells.tpa~
+//修改腐化魔法效果
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP935.spl~      ~override/Z#SP935.spl~
+WRITE_SHORT   0x98 ~%Z#CORR%~
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP936.spl~      ~override/Z#SP936.spl~
+WRITE_SHORT   0x98 ~%Z#CORR%~
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP937.spl~      ~override/Z#SP937.spl~
+WRITE_SHORT   0x98 ~%Z#CORR%~
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP939.spl~      ~override/Z#SP939.spl~
+WRITE_SHORT   0x98 ~%Z#CORR%~
+
+ACTION_IF (MOD_IS_INSTALLED ~ImprovedAnvil/Setup-ImprovedAnvil.tp2~ ~0~) BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/set_spl_cp_ia.tpa~
+END ELSE BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/set_spl_cp.tpa~
+END
+//安装法术书
+INCLUDE ~%MOD_FOLDER%/lib/set_books.tpa~
+
+BEGIN @1005
+REQUIRE_FILE ~override/AMDK.2da~ @1006
+
+COPY ~ZSpells\original\bam~ ~override~
+
+//恢复连锁意外术
+COPY ~ZSpells/original/spl/SPWI908.SPL~ ~override/SPWI908.SPL~ 
+  SAY NAME1 @5001
+  SAY UNIDENTIFIED_DESC @5002  
+
+//恢复投影术
+COPY ~ZSpells/original/spl/SPWI703.SPL~ ~override/SPWI703.SPL~ 
+  SAY NAME1 @5003
+  SAY UNIDENTIFIED_DESC @5004  
+
+COPY ~ZSpells/original/item/SCRL8F.ITM~ ~override/SCRL8F.ITM~ 
+  SAY NAME2 @5003
+  SAY IDENTIFIED_DESC @5004  
+
+//恢复法术陷阱
+COPY ~ZSpells/original/spl/spwi902b.SPL~ ~override/spwi902b.SPL~ 
+
+COPY ~ZSpells/original/spl/SPWI902.SPL~ ~override/SPWI902.SPL~ 
+  SAY NAME1 @5005
+  SAY UNIDENTIFIED_DESC @5006  
+
+COPY ~ZSpells/original/item/SCRL9L.ITM~ ~override/SCRL9L.ITM~ 
+  SAY NAME2 @5005
+  SAY IDENTIFIED_DESC @5006 
+
+//恢复拟象术
+COPY ~ZSpells/original/spl/SPWI804.SPL~ ~override/SPWI804.SPL~ 
+  SAY NAME1 @5007
+  SAY UNIDENTIFIED_DESC @5008  
+
+COPY ~ZSpells/original/item/SCRL8Z.ITM~ ~override/SCRL8Z.ITM~ 
+  SAY NAME2 @5007
+  SAY IDENTIFIED_DESC @5007 
+
+BEGIN @1007 //恢复大法师之杖
+REQUIRE_FILE ~override/AMDK.2da~ @1006
+
+COPY ~ZSpells/original/spl/staf11.SPL~ ~override/staf11.SPL~ 
+  SAY NAME1 @5005
+  SAY UNIDENTIFIED_DESC @5006  
+
+COPY ~ZSpells/original/item/STAF11.ITM~ ~override/STAF11.ITM~ 
+  SAY NAME2 @5009
+  SAY IDENTIFIED_DESC @5010

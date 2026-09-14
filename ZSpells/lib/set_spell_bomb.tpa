@@ -1,0 +1,223 @@
+LAF resolve_splprot_state STR_VAR stat=~14~ value=~-1~ relation=~4~ row_name=~STAT(RESISTFIRE)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTFIRE = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~15~ value=~-1~ relation=~4~ row_name=~STAT(RESISTCOLD)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTCOLD = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~74~ value=~-1~ relation=~4~ row_name=~STAT(RESISTPOISON)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTPOISON = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~17~ value=~-1~ relation=~4~ row_name=~STAT(RESISTACID)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTACID = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~16~ value=~-1~ relation=~4~ row_name=~STAT(RESISTELECTRICITY)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTELECTRICITY = %new_state_index%
+
+LAF resolve_splprot_state STR_VAR stat=~73~ value=~-1~ relation=~4~ row_name=~STAT(MAGICDAMAGERESISTANCE)>=n~ RET new_state_index END
+OUTER_SET new_id_MAGICDAMAGERESISTANCE = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP51D.spl~      ~override/Z#SP51D.spl~
+WRITE_SHORT   0x98 ~%Z#BOMB%~
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP81D.spl~      ~override/Z#SP81D.spl~
+WRITE_SHORT   0x98 ~%Z#BOMB%~
+
+COPY ~%MOD_FOLDER%/spl/Z#SP51.spl~      ~override/Z#SP51.spl~
+  SAY NAME1 @2001
+  SAY UNIDENTIFIED_DESC @2002
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP51A.spl~      ~override/Z#SP51A.spl~
+  LPF DELETE_SPELL_EFFECT
+    INT_VAR
+      opcode_to_delete   = 326
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 0
+      parameter2    = 0
+      power         = 5
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP51D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 100
+      parameter2    = "%new_id_RESISTFIRE%"
+      power         = 5
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP51D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 100
+      parameter2    = "%new_id_RESISTCOLD%"
+      power         = 5
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP51D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 100
+      parameter2    = "%new_id_RESISTELECTRICITY%"
+      power         = 5
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP51D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 100
+      parameter2    = "%new_id_MAGICDAMAGERESISTANCE%"
+      power         = 5
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP51D"
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#SP81.spl~      ~override/Z#SP81.spl~
+  SAY NAME1 @2003
+  SAY UNIDENTIFIED_DESC @2004
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#SP81A.spl~      ~override/Z#SP81A.spl~
+  LPF DELETE_SPELL_EFFECT
+    INT_VAR
+      opcode_to_delete   = 326
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 0
+      parameter2    = 0
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_RESISTFIRE%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_RESISTCOLD%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_RESISTELECTRICITY%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_MAGICDAMAGERESISTANCE%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_RESISTPOISON%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END
+  LPF ADD_SPELL_EFFECT
+    INT_VAR
+      opcode        = 326
+      target        = 2
+      timing        = 4
+      parameter1    = 80
+      parameter2    = "%new_id_RESISTACID%"
+      power         = 0
+      resist_dispel = 0
+      duration      = 6
+      probability1  = 100
+      probability2  = 0
+    STR_VAR
+      resource   =  "Z#SP81D"
+  END

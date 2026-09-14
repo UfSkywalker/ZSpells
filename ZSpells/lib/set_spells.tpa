@@ -1,0 +1,399 @@
+COPY ~%MOD_FOLDER%/spl/A#SPPR61.SPL~      ~override/A#SPPR61.SPL~
+  SAY NAME1 @2005
+  SAY UNIDENTIFIED_DESC @2006
+
+COPY ~%MOD_FOLDER%/spl/A#SPPR79.SPL~      ~override/A#SPPR79.SPL~
+  SAY NAME1 @2015
+  SAY UNIDENTIFIED_DESC @2016
+
+COPY ~%MOD_FOLDER%/spl/Z#PF616.spl~      ~override/Z#PF616.spl~
+  SAY NAME1 @2009
+  SAY UNIDENTIFIED_DESC @2010
+
+COPY ~%MOD_FOLDER%/spl/Z#PF713.spl~      ~override/Z#PF713.spl~
+  SAY NAME1 @2011
+  SAY UNIDENTIFIED_DESC @2012
+
+COPY ~%MOD_FOLDER%/spl/Z#PF801.spl~      ~override/Z#PF801.spl~
+  WRITE_SHORT   0x98 ~%Z#ElTP%~
+  SAY NAME1 @2013
+  SAY UNIDENTIFIED_DESC @2014
+
+COPY ~%MOD_FOLDER%/spl/Z#PF913.SPL~      ~override/Z#PF913.SPL~
+  SAY NAME1 @2017
+  SAY UNIDENTIFIED_DESC @2018
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2019) STR_VAR new_icon=~Z#PF501D~ RET new_state_index END
+OUTER_SET new_id_501_icon = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF501.spl~      ~override/Z#PF501.spl~
+  SAY NAME1 @2019
+  SAY UNIDENTIFIED_DESC @2020
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_501_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#PF501D.spl~      ~override/Z#PF501D.spl~
+  SAY NAME1 @2019
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#KILLUD.spl~      ~override/Z#KILLUD.spl~
+  SAY NAME1 @2021
+
+COPY ~%MOD_FOLDER%/spl/Z#SP701.spl~      ~override/Z#SP701.spl~
+  SAY NAME1 @2022
+  SAY UNIDENTIFIED_DESC @2023
+
+COPY ~%MOD_FOLDER%/spl/Z#PF301.spl~      ~override/Z#PF301.spl~
+  SAY NAME1 @2024
+  SAY UNIDENTIFIED_DESC @2025
+  // FOR ( index = 1 ; index <= 20 ; ++index) BEGIN
+  //   LPF ALTER_SPELL_HEADER
+  //     INT_VAR
+  //       header            = "%index%"
+  //       min_level         = "%index%"
+  //   END
+  //   LPF ALTER_SPELL_EFFECT
+  //     INT_VAR
+  //       header            = "%index%"
+  //       duration_high     = "%index%" * 60
+  //   END
+  // END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF601.spl~      ~override/Z#PF601.spl~
+  SAY NAME1 @2026
+  SAY UNIDENTIFIED_DESC @2027
+
+COPY ~%MOD_FOLDER%/spl/Z#PF101.spl~      ~override/Z#PF101.spl~
+  SAY NAME1 @2028
+  SAY UNIDENTIFIED_DESC @2029
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 139
+      parameter1        = RESOLVE_STR_REF(@2028)
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF401.spl~      ~override/Z#PF401.spl~
+  SAY NAME1 @2030
+  SAY UNIDENTIFIED_DESC @2031
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 206
+      parameter1        = RESOLVE_STR_REF(@2036)
+  END
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 139
+      parameter1        = RESOLVE_STR_REF(@2030)
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF701.spl~      ~override/Z#PF701.spl~
+  SAY NAME1 @2032
+  SAY UNIDENTIFIED_DESC @2033
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 206
+      parameter1        = RESOLVE_STR_REF(@2036)
+  END
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 139
+      parameter1        = RESOLVE_STR_REF(@2032)
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF901.spl~      ~override/Z#PF901.spl~
+  SAY NAME1 @2034
+  SAY UNIDENTIFIED_DESC @2035
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 206
+      parameter1        = RESOLVE_STR_REF(@2036)
+  END
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 139
+      parameter1        = RESOLVE_STR_REF(@2034)
+  END
+
+
+COPY ~%MOD_FOLDER%/spl/Z#PF502.spl~      ~override/Z#PF502.spl~
+  SAY NAME1 @2037
+  SAY UNIDENTIFIED_DESC @2038
+
+COPY ~%MOD_FOLDER%/spl/Z#PF302.spl~      ~override/Z#PF302.spl~
+  SAY NAME1 @2039
+  SAY UNIDENTIFIED_DESC @2040
+
+COPY ~%MOD_FOLDER%/spl/Z#PF503.spl~      ~override/Z#PF503.spl~
+  SAY NAME1 @2041
+  SAY UNIDENTIFIED_DESC @2042
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2043) STR_VAR new_icon=~Z#PF303D~ RET new_state_index END
+OUTER_SET new_id_303_icon = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF303.spl~      ~override/Z#PF303.spl~
+  SAY NAME1 @2043
+  SAY UNIDENTIFIED_DESC @2044
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_303_icon%
+  END
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2045) STR_VAR new_icon=~Z#PF201D~ RET new_state_index END
+OUTER_SET new_id_201_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2047) STR_VAR new_icon=~Z#PF202D~ RET new_state_index END
+OUTER_SET new_id_202_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2049) STR_VAR new_icon=~Z#PF203D~ RET new_state_index END
+OUTER_SET new_id_203_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2051) STR_VAR new_icon=~Z#PF204D~ RET new_state_index END
+OUTER_SET new_id_204_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2053) STR_VAR new_icon=~Z#PF205D~ RET new_state_index END
+OUTER_SET new_id_205_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2055) STR_VAR new_icon=~Z#PF206D~ RET new_state_index END
+OUTER_SET new_id_206_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2085) STR_VAR new_icon=~Z#PF207D~ RET new_state_index END
+OUTER_SET new_id_207_icon = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF201.spl~      ~override/Z#PF201.spl~
+  SAY NAME1 @2045
+  SAY UNIDENTIFIED_DESC @2046
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_201_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF202.spl~      ~override/Z#PF202.spl~
+  SAY NAME1 @2047
+  SAY UNIDENTIFIED_DESC @2048
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_202_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF203.spl~      ~override/Z#PF203.spl~
+  SAY NAME1 @2049
+  SAY UNIDENTIFIED_DESC @2050
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_203_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF204.spl~      ~override/Z#PF204.spl~
+  SAY NAME1 @2051
+  SAY UNIDENTIFIED_DESC @2052
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_204_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF205.spl~      ~override/Z#PF205.spl~
+  SAY NAME1 @2053
+  SAY UNIDENTIFIED_DESC @2054
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_205_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF206.spl~      ~override/Z#PF206.spl~
+  SAY NAME1 @2055
+  SAY UNIDENTIFIED_DESC @2056
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_206_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF207.spl~      ~override/Z#PF207.spl~
+  SAY NAME1 @2085
+  SAY UNIDENTIFIED_DESC @2086
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_207_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF102.spl~      ~override/Z#PF102.spl~
+  SAY NAME1 @2057
+  SAY UNIDENTIFIED_DESC @2058
+
+COPY ~%MOD_FOLDER%/spl/Z#PF304.spl~      ~override/Z#PF304.spl~
+  SAY NAME1 @2059
+  SAY UNIDENTIFIED_DESC @2060
+
+COPY ~%MOD_FOLDER%/spl/Z#PF602.spl~      ~override/Z#PF602.spl~
+  SAY NAME1 @2061
+  SAY UNIDENTIFIED_DESC @2062
+
+COPY ~%MOD_FOLDER%/spl/Z#PF802.spl~      ~override/Z#PF802.spl~
+  SAY NAME1 @2063
+  SAY UNIDENTIFIED_DESC @2064
+
+COPY ~%MOD_FOLDER%/spl/Z#PF902.spl~      ~override/Z#PF902.spl~
+  SAY NAME1 @2065
+  SAY UNIDENTIFIED_DESC @2066
+
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2067) STR_VAR new_icon=~Z#PF103D~ RET new_state_index END
+OUTER_SET new_id_103_icon = %new_state_index%
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2069) STR_VAR new_icon=~Z#PF104D~ RET new_state_index END
+OUTER_SET new_id_104_icon = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF103.spl~      ~override/Z#PF103.spl~
+  SAY NAME1 @2067
+  SAY UNIDENTIFIED_DESC @2068
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_103_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF104.spl~      ~override/Z#PF104.spl~
+  SAY NAME1 @2069
+  SAY UNIDENTIFIED_DESC @2070
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_104_icon%
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF105.spl~      ~override/Z#PF105.spl~
+  SAY NAME1 @2071
+  SAY UNIDENTIFIED_DESC @2072
+
+COPY ~%MOD_FOLDER%/spl/Z#PF402.spl~      ~override/Z#PF402.spl~
+  SAY NAME1 @2073
+  SAY UNIDENTIFIED_DESC @2074
+  // LPF ALTER_SPELL_EFFECT
+  //   INT_VAR
+  //     match_opcode      = 12
+  //     savingthrow       = 2
+  //     savebonus         = "-2"
+  // END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF403.spl~      ~override/Z#PF403.spl~
+  SAY NAME1 @2075
+  SAY UNIDENTIFIED_DESC @2076
+
+
+COPY ~%MOD_FOLDER%/spl/Z#PF404.spl~      ~override/Z#PF404.spl~
+  SAY NAME1 @2077
+  SAY UNIDENTIFIED_DESC @2078
+
+COPY ~%MOD_FOLDER%/spl/Z#PF405.spl~      ~override/Z#PF405.spl~
+  SAY NAME1 @2079
+  SAY UNIDENTIFIED_DESC @2080
+
+COPY ~%MOD_FOLDER%/spl/Z#PF406.spl~      ~override/Z#PF406.spl~
+  SAY NAME1 @2081
+  SAY UNIDENTIFIED_DESC @2082
+
+COPY ~%MOD_FOLDER%/spl/Z#PF407.spl~      ~override/Z#PF407.spl~
+  SAY NAME1 @2087
+  SAY UNIDENTIFIED_DESC @2088
+
+LAF resolve_statdesc INT_VAR desc_index=RESOLVE_STR_REF(@2083) STR_VAR new_icon=~Z#PF702D~ RET new_state_index END
+OUTER_SET new_id_702_icon = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF702.spl~      ~override/Z#PF702.spl~
+  SAY NAME1 @2083
+  SAY UNIDENTIFIED_DESC @2084
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 142
+      parameter2        = %new_id_702_icon%
+  END
+  LPF ALTER_SPELL_EFFECT
+    INT_VAR
+      match_opcode      = 139
+      parameter1        = RESOLVE_STR_REF(@2083)
+  END
+
+COPY ~%MOD_FOLDER%/spl/Z#PF408.spl~      ~override/Z#PF408.spl~
+  SAY NAME1 @2089
+  SAY UNIDENTIFIED_DESC @2090
+
+COPY ~%MOD_FOLDER%/spl/Z#PF106.spl~      ~override/Z#PF106.spl~
+  SAY NAME1 @2091
+  SAY UNIDENTIFIED_DESC @2092
+
+COPY ~%MOD_FOLDER%/spl/Z#PF107.spl~      ~override/Z#PF107.spl~
+  SAY NAME1 @2093
+  SAY UNIDENTIFIED_DESC @2094
+
+COPY ~%MOD_FOLDER%/spl/Z#PF108.spl~      ~override/Z#PF108.spl~
+  SAY NAME1 @2095
+  SAY UNIDENTIFIED_DESC @2096
+
+COPY ~%MOD_FOLDER%/spl/Z#PF109.spl~      ~override/Z#PF109.spl~
+  SAY NAME1 @2097
+  SAY UNIDENTIFIED_DESC @2098
+
+COPY ~%MOD_FOLDER%/spl/Z#PF110.spl~      ~override/Z#PF110.spl~
+  SAY NAME1 @2099
+  SAY UNIDENTIFIED_DESC @2100
+
+COPY ~%MOD_FOLDER%/spl/Z#PF111.spl~      ~override/Z#PF111.spl~
+  SAY NAME1 @2101
+  SAY UNIDENTIFIED_DESC @2102
+
+COPY ~%MOD_FOLDER%/spl/Z#PF112.spl~      ~override/Z#PF112.spl~
+  SAY NAME1 @2103
+  SAY UNIDENTIFIED_DESC @2104
+
+COPY ~%MOD_FOLDER%/spl/Z#SP703.spl~      ~override/Z#SP703.spl~
+  SAY NAME1 @2105
+  SAY UNIDENTIFIED_DESC @2106
+
+COPY ~%MOD_FOLDER%/spl/Z#SP903.spl~      ~override/Z#SP903.spl~
+  SAY NAME1 @2107
+  SAY UNIDENTIFIED_DESC @2108
+
+COPY ~%MOD_FOLDER%/spl/Z#SP603.spl~      ~override/Z#SP603.spl~
+  SAY NAME1 @2109
+  SAY UNIDENTIFIED_DESC @2110
+  LPF ALTER_SPELL_HEADER
+    STR_VAR
+      icon         = "Z#SP603B"
+  END 
+
+COPY ~%MOD_FOLDER%/spl/Z#SP904.spl~      ~override/Z#SP904.spl~
+  SAY NAME1 @2113
+  SAY UNIDENTIFIED_DESC @2114
+
+COPY ~%MOD_FOLDER%/spl/Z#MSP95.spl~      ~override/Z#MSP95.spl~
+  SAY NAME1 @2115
+  SAY UNIDENTIFIED_DESC @2116
+
+COPY ~%MOD_FOLDER%/spl/Z#SP409.spl~      ~override/Z#SP409.spl~
+  SAY NAME1 @2117
+  SAY UNIDENTIFIED_DESC @2118
+
+COPY ~%MOD_FOLDER%/spl/Z#SP704.spl~      ~override/Z#SP704.spl~
+  SAY NAME1 @2119
+  SAY UNIDENTIFIED_DESC @2120
+
+COPY ~%MOD_FOLDER%/spl/Z#MSP91.spl~      ~override/Z#MSP91.spl~
+  SAY NAME1 @2121
+  SAY UNIDENTIFIED_DESC @2122
+
+COPY ~%MOD_FOLDER%/spl/Z#PF409.spl~      ~override/Z#PF409.spl~
+  SAY NAME1 @2123
+  SAY UNIDENTIFIED_DESC @2124
+  LPF ALTER_SPELL_HEADER
+    INT_VAR
+      projectile         = ~%Z#FBNP%~
+  END 

@@ -1,0 +1,79 @@
+@5001 =~Chain Contingency~
+@5002 =~Chain Contingency (Conjuration/Summoning, Invocation/Evocation)
+Level: 9
+Range: 0
+Duration: Special
+Casting Time: 1 turn
+Area of Effect: The caster
+Saving Throw: None
+
+Chain Contingency channels and stores some of the wizard's magical energy, and releases it only under certain circumstances. In principle the wizard chooses three spells, which will be cast automatically when a set condition occurs, such as being hit by an enemy. When the chosen condition is met, the three spells are cast at the same time. A Chain Contingency may be set to use spells of any level.~
+
+@5003 =~Project Image~
+@5004 =~Project Image (Illusion/Phantasm)
+Level: 7
+Range: 0
+Duration: 1 round/level
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None
+
+This spell creates an illusionary double of the wizard that steps out of his body. The double has the same Hit Points as the wizard, and can move and cast spells independently, but it cannot make any physical attacks. If the projected double is destroyed, the spell ends and the wizard can move again; also, if the wizard's own body takes damage while Project Image is in effect, the double disappears and the wizard can move again. Otherwise the projected double lasts until the spell's duration expires, until it is dispelled, or until it is seen through by an illusion-dispelling spell such as True Sight.~
+
+@5005 =~Spell Trap~
+@5006 =~Spell Trap (Abjuration)
+Level: 9
+Range: 0
+Duration: 1 round/level
+Casting Time: 9
+Area of Effect: The caster
+Saving Throw: None
+
+This spell raises a powerful barrier of magical protection around the caster. Every spell that strikes this barrier is absorbed, and the caster recalls a spell cast earlier. For example, a wizard protects himself with Spell Trap and is then hit by a Flame Arrow (a 3rd-level spell). The wizard gets three spell levels back, and recalls one spell of up to 3rd level.
+A Spell Trap absorbs a total of thirty spell levels (ten Flame Arrows, or five Finger of Death spells), and it can absorb any spell from level one to level nine.~
+
+@5007 =~Simulacrum~
+@5008 =~Simulacrum (Illusion/Phantasm)
+Level: 8
+Range: 0
+Duration: 1 round/level
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None
+
+This spell creates a duplicate of the wizard that is almost identical to him, making it a very powerful ally. The duplicate is created at 60% of the caster's level and has all the spells and abilities belonging to that level. Its Hit Points are also 60% of the wizard's, and it obeys the wizard's orders completely.~
+
+@5009 =~Staff of the Magi~
+@5010 =~Although extremely rare, this type of staff is unquestionably linked to the spellcasting profession. It is one of the most powerful weapons a wizard can possess, the fruit of complex magic and endless research. This particular staff performs very well in melee: it grants the user invisibility, protects against charm and guards against evil. It can also cast Spell Trap, launch arrows that combine fireball and lightning, and dispel enemy magical effects. It is a classic among magical items.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +2
+- Saving Throws: +2
+- Invisibility
+- Immunity to charm
+- Protection From Evil
+
+Combat abilities:
+- Dispel Magic at level 30 on each hit
+
+Special abilities:
+- Fireball-Lightning Bolt three times per day
+  Fireball: 10d6 fire damage to all creatures in a 15-ft. radius (Save vs. Spell for half)
+  Lightning: 10d6 electrical damage to all creatures in its path (Save vs. Spell for half)
+  Range: 150 ft.
+
+- Spell Trap once per day
+  Duration: 8 hours or until 30 spell levels have been absorbed
+  Area of Effect: The user
+
+THAC0: +1 (strikes as a +5 weapon)
+Damage: 1d6+1 (crushing)
+Speed Factor: 4
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4~

@@ -1,0 +1,6 @@
+fileignoreconfig:
+- filename: ZSpells/bam/Z#PF104D.BAM
+  checksum: f6500a0ffb4833daa256ddcf27f776976e38f417fb05544781a84d420f45aa0c
+- filename: ZSpells/bam/Z#PF103D.BAM
+  checksum: e3f990a021e13155c3ff8eef24df0a2eecee1770b27e8b42f3667201ebcaa3ed
+version: ""

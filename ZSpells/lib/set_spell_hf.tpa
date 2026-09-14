@@ -1,0 +1,30 @@
+LAF resolve_splprot_state STR_VAR stat=~14~ value=~-1~ relation=~4~ row_name=~STAT(RESISTFIRE)>=n~ RET new_state_index END
+OUTER_SET new_id_RESISTFIRE = %new_state_index%
+
+COPY ~%MOD_FOLDER%/spl/Z#PF693.SPL~      ~override/Z#PF693.SPL~
+  SAY NAME1 @2007
+  SAY UNIDENTIFIED_DESC @2008
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#PF693A.spl~      ~override/Z#PF693A.spl~
+LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode    = 326
+    parameter2      = "%new_id_RESISTFIRE%"
+    duration        = 1
+END
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#PF693B.spl~      ~override/Z#PF693B.spl~
+LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode    = 326
+    parameter2      = "%new_id_RESISTFIRE%"
+    duration        = 1
+END
+
+COPY ~%MOD_FOLDER%/spl/nameless/Z#PF693C.spl~      ~override/Z#PF693C.spl~
+LPF ALTER_SPELL_EFFECT
+  INT_VAR
+    match_opcode    = 326
+    parameter2      = "%new_id_RESISTFIRE%"
+    duration        = 1
+END

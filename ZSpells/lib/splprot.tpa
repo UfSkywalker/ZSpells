@@ -1,0 +1,22 @@
+/// add a new spell state to splprot.2da ///
+DEFINE_ACTION_FUNCTION resolve_splprot_state
+  STR_VAR stat=~0~ value=~0~ relation=~0~ row_name=~0~
+  RET new_state_index
+BEGIN
+  OUTER_SET "new_state_index" = 0
+  COPY_EXISTING ~splprot.2da~ ~override~
+    COUNT_2DA_ROWS 4 rows
+    FOR ( index = 0 ; index < rows ; index = index + 1 ) BEGIN
+      READ_2DA_ENTRY "%index%" 1 4 "splprot_stat"
+      READ_2DA_ENTRY "%index%" 2 4 "splprot_value"
+      READ_2DA_ENTRY "%index%" 3 4 "splprot_relation"
+      PATCH_IF ("%splprot_stat%" STRING_COMPARE_CASE "%stat%" = 0) && ("%splprot_value%" STRING_COMPARE_CASE "%value%" = 0) &&("%splprot_relation%" STRING_COMPARE_CASE "%relation%" = 0) BEGIN //有现成BACKSTABDAMAGEMULTIPLIER判断行
+        SET "new_state_index" = "%index%"
+      END
+    END
+    PATCH_IF (new_state_index = 0) BEGIN
+      SET "new_state_index" = "%rows%"
+      INSERT_2DA_ROW new_state_index 4 ~%new_state_index%_%row_name%    %stat%    %value%    %relation%~
+    END
+  BUT_ONLY
+END

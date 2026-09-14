@@ -1,0 +1,25 @@
+# Normalise line endings in text files on commit; detect binary files automatically.
+* text=auto
+
+# Translation files MUST stay LF: WeiDU writes the line endings of a tra file
+# straight into the in-game strings, and vanilla .tlk strings only ever use LF.
+*.tra text eol=lf
+
+# Infinity Engine game data is binary - never touch it
+*.spl binary
+*.SPL binary
+*.bam binary
+*.BAM binary
+*.eff binary
+*.EFF binary
+*.pro binary
+*.PRO binary
+*.itm binary
+*.ITM binary
+*.cre binary
+*.CRE binary
+*.vvc binary
+*.VVC binary
+*.tis binary
+*.mos binary
+*.wav binary
