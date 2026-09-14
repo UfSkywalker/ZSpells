@@ -23,8 +23,9 @@ $RECYCLE.BIN/
 weidu_external/
 weidu.log
 *.debug
-backup/
-ZSpells/backup/
+# WeiDU backup dir (matches the tp2 BACKUP path). Do NOT ignore every
+# folder named backup: ZSpells/original/backup/ holds mod content.
+/ZSpells/backup/
 
 # Prebuilt WeiDU installer binaries: attach these to a GitHub release instead
 Setup-*.exe
